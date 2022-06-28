@@ -1,0 +1,46 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activesupport (7.0.3)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 1.6, < 2)
+      minitest (>= 5.1)
+      tzinfo (~> 2.0)
+    concurrent-ruby (1.1.10)
+    i18n (1.10.0)
+      concurrent-ruby (~> 1.0)
+    minitest (5.16.1)
+    mustermann (1.1.1)
+      ruby2_keywords (~> 0.0.1)
+    nokogiri (1.13.6-x86_64-linux)
+      racc (~> 1.4)
+    racc (1.6.0)
+    rack (2.2.3.1)
+    rack-protection (2.2.0)
+      rack
+    ruby2_keywords (0.0.5)
+    sinatra (2.2.0)
+      mustermann (~> 1.0)
+      rack (~> 2.2)
+      rack-protection (= 2.2.0)
+      tilt (~> 2.0)
+    tilt (2.0.10)
+    tzinfo (2.0.4)
+      concurrent-ruby (~> 1.0)
+    webrick (1.7.0)
+
+PLATFORMS
+  x86_64-linux-musl
+
+DEPENDENCIES
+  activesupport (~> 7.0)
+  nokogiri (~> 1.13)
+  rack (~> 2.2)
+  sinatra (~> 2.2)
+  webrick (~> 1.7)
+
+RUBY VERSION
+   ruby 3.1.2p20
+
+BUNDLED WITH
+   2.3.7
