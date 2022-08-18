@@ -8,7 +8,10 @@ get '/healthcheck' do
   'OK'
 end
 
-get %r{/([0-9a-z]+)/(.+)} do |token, upstream|
+get '/*' do
+  _, token, *path_parts = request.fullpath.split('/')
+  upstream = path_parts.join('/')
+
   if ActiveSupport::SecurityUtils.secure_compare(token, ENV.fetch('TOKEN'))
     Nokogiri::XML(URI.open('https://' + upstream))
       .tap { |document| Transformer.transform(document) }
