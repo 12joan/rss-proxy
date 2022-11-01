@@ -17,7 +17,9 @@ get '/*' do
     uri = transformer.transform_uri(URI.parse('https://' + upstream))
     original_document = Nokogiri::XML(URI.open(uri))
     transformed_document = transformer.transform_document(original_document)
-    transformed_document.to_xml
+
+    content_type 'application/rss+xml; charset=utf-8'
+    return transformed_document.to_xml
   else
     'Invalid token'
   end
