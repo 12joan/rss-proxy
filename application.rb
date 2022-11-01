@@ -15,11 +15,11 @@ get '/*' do
   if ActiveSupport::SecurityUtils.secure_compare(token, ENV.fetch('TOKEN'))
     transformer = Transformer.new
     uri = transformer.transform_uri(URI.parse('https://' + upstream))
-    original_document = Nokogiri::XML(URI.open(uri))
-    transformed_document = transformer.transform_document(original_document)
+    document = Nokogiri::XML(URI.open(uri))
+    transformer.transform_document(document)
 
     content_type 'application/rss+xml; charset=utf-8'
-    return transformed_document.to_xml
+    return document.to_xml
   else
     'Invalid token'
   end
