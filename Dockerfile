@@ -1,6 +1,6 @@
 FROM ruby:3.1.2-alpine
 
-RUN apk add --update --no-cache bash curl
+RUN apk add --update --no-cache bash curl make gcc libc-dev
 
 WORKDIR /app
 
