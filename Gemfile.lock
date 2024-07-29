@@ -22,7 +22,7 @@ GEM
     mustermann (2.0.2)
       ruby2_keywords (~> 0.0.1)
     mutex_m (0.2.0)
-    nokogiri (1.16.6-x86_64-linux)
+    nokogiri (1.16.7-x86_64-linux)
       racc (~> 1.4)
     racc (1.8.0)
     rack (2.2.9)
