@@ -15,9 +15,8 @@ jobs:
       continue-on-error: true
 
     - run: docker compose -f docker-compose.test.yml up -d --build
-
+    - run: sleep 3
     - run: docker compose -f docker-compose.test.yml exec -T web curl -f -LI http://localhost:3000/healthcheck
-
     - run: docker compose -f docker-compose.test.yml down
 
   deploy_production:
