@@ -25,12 +25,10 @@ GEM
     minitest (5.25.4)
     mustermann (2.0.2)
       ruby2_keywords (~> 0.0.1)
-    nokogiri (1.18.3-x86_64-linux-gnu)
-      racc (~> 1.4)
     nokogiri (1.18.3-x86_64-linux-musl)
       racc (~> 1.4)
     racc (1.8.1)
-    rack (2.2.11)
+    rack (2.2.12)
     rack-protection (2.2.4)
       rack
     ruby2_keywords (0.0.5)
