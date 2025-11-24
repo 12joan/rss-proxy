@@ -22,7 +22,7 @@ GEM
     i18n (1.14.7)
       concurrent-ruby (~> 1.0)
     logger (1.7.0)
-    minitest (5.26.1)
+    minitest (5.26.2)
     mustermann (2.0.2)
       ruby2_keywords (~> 0.0.1)
     nokogiri (1.18.10-x86_64-linux-musl)
