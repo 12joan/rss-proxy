@@ -3,6 +3,6 @@ services:
     build: .
     ports:
       - '3000:3000'
-    env_file: .env.example
-    volumes:
-      - ./transformer.example.rb:/transformer.rb:ro
+    environment:
+      TOKEN: test-token
+      TRANSFORMER_PATH: /app/test/test_transformer.rb
