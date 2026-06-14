@@ -1,19 +1,12 @@
-class Transformer
-  # Rewrite https://twitter/:id to https://nitter.ca/:id/rss
-  def transform_uri(original_uri)
-    original_uri.clone.tap do |uri|
-      case original_uri.host
-      when 'twitter'
-        uri.host = 'nitter.ca'
-        uri.path = "#{original_uri.path}/rss"
-      end
-    end
-  end
+require_relative 'app/app/base_transformer'
 
+class Transformer < BaseTransformer
   # Reverse the title
-  def transform_document(document)
+  def transform_document document
     document.xpath('//rss/channel/item').each do |item|
-      item.at('title').content = item.at('title').content.reverse
+      if item.at('title')
+        item.at('title').content = item.at('title').content.reverse
+      end
     end
   end
 end

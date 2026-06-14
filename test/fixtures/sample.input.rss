@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Example News</title>
+    <link>https://www.example.com</link>
+    <description>Latest news and articles from Example</description>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 04 Mar 2026 10:00:00 GMT</lastBuildDate>
+    <atom:link href="https://www.example.com/feed.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>Understanding XML Namespaces</title>
+      <link>https://www.example.com/xml-namespaces</link>
+      <description>
+        A deep dive into how XML namespaces work and why they matter for document interchange.
+      </description>
+      <pubDate>Tue, 04 Mar 2026 08:30:00 GMT</pubDate>
+      <guid isPermaLink="true">https://www.example.com/xml-namespaces</guid>
+      <category>XML</category>
+    </item>
+
+    <item>
+      <title>Getting Started with XSLT</title>
+      <link>https://www.example.com/xslt-guide</link>
+      <description>
+        Learn how to transform XML documents into HTML, text, and other formats using XSLT.
+      </description>
+      <pubDate>Mon, 03 Mar 2026 14:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://www.example.com/xslt-guide</guid>
+      <category>XSLT</category>
+    </item>
+  </channel>
+</rss>
