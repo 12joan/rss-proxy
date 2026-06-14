@@ -27,7 +27,7 @@ The `TOKEN` environment variable must be included in all requests to the proxy s
 
 GET requests sent to the proxy server should have the form `/:token/:upstream`, where `:token` is the value of `TOKEN` and `:upstream` is the URL of some RSS feed accessible to the Docker container. This upstream URL must use HTTPS, but `https://` should be omitted from `:upstream`.
 
-For example, to proxy `https://example.com/my-feed`, send a GET request to `http://localhost:3000/my-tokne/example.com/my-feed`.
+For example, to proxy `https://example.com/my-feed`, send a GET request to `http://localhost:3000/my-token/example.com/my-feed`.
 
 ### Transformer file (required)
 
